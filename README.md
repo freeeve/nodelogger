@@ -10,6 +10,12 @@ One solution: I used http://n0rp.chemlab.org/vlogger/ for a while, which was str
 
 The idea behind nodelogger is to provide a logging utility able to take the standard "piped" output from apache, and to drop that output into a mongodb database. It also has the side benefit of looking up IP address lat/lon, which I have plans for in my logviewer to come.
 
+## why node?
+
+To be honest, because I wanted to try node out. It seems to behave roughly the same as the perl version I wrote before this. The node version takes a few megs of RAM more, and a bit less CPU (although the CPU is pretty negligible here, it's about 30% less).
+
+I'm playing with the idea of having a real-time log viewer which may accept updates directly from the logger (as opposed to doing queries against the mongodb).
+
 ## installing
 
 This guide assumes you have nodejs (tested with 0.4.9) and npm installed. You also need to have a mongodb server.
@@ -32,3 +38,5 @@ CustomLog "| /usr/local/bin/node /usr/local/node_modules/nodelogger/nodelogger.j
 * handle error logging.
 * don't insert fields that have no value.
 * create an npm package.
+* allow configurable database name.
+* option for same collection or collections per virtualhost (currently can only have collections per virtualhost).
