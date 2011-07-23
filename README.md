@@ -33,6 +33,13 @@ LogFormat "%v %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" comb
 CustomLog "| /usr/local/bin/node /usr/local/node_modules/nodelogger/nodelogger.js" combined
 ```
 
+## configure your environment
+
+if you're not running mongod on the same machine as apache, you'll need to set two environment variables:
+
+* MONGO_NODE_DRIVER_HOST
+* MONGO_NODE_DRIVER_PORT
+
 ## todo
 
 * handle error logging.
