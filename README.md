@@ -20,7 +20,7 @@ I'm playing with the idea of having a real-time log viewer which may accept upda
 
 This guide assumes you have nodejs (tested with 0.4.9) and npm installed. You also need to have a mongodb server.
 
-1. Install the GeoIP C library (either via your package manager, or via source):
+* Install the GeoIP C library (either via your package manager, or via source):
 
 ```sh
 wget http://geolite.maxmind.com/download/geoip/api/c/GeoIP-1.4.7.tar.gz
@@ -30,10 +30,10 @@ cd GeoIP-1.4.7
 make
 sudo make install
 ```
-2. Install GeoIP: `npm install geoip`
-3. Install MongoDB: `npm install mongodb --mongodb:native`
-4. Put nodelogger.js in a convenient path somewhere, let's say /usr/local/node_modules/nodelogger/nodelogger.js
-5. Download the MaxMind GeoCityLite database.
+* Install GeoIP: `npm install geoip`
+* Install MongoDB: `npm install mongodb --mongodb:native`
+* Put nodelogger.js in a convenient path somewhere, let's say /usr/local/node_modules/nodelogger/nodelogger.js
+* Download the MaxMind GeoCityLite database.
 
 ## configure your apache
 
