@@ -33,7 +33,7 @@ sudo make install
 * Install GeoIP: `npm install geoip`
 * Install MongoDB: `npm install mongodb --mongodb:native`
 * Put nodelogger.js in a convenient path somewhere, let's say /usr/local/node_modules/nodelogger/nodelogger.js
-* Download the MaxMind GeoCityLite database.
+* Download the MaxMind GeoLiteCity free database: http://www.maxmind.com/app/geolitecity
 
 ## configure your apache
 
