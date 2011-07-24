@@ -21,6 +21,7 @@ I'm playing with the idea of having a real-time log viewer which may accept upda
 This guide assumes you have nodejs (tested with 0.4.9) and npm installed. You also need to have a mongodb server.
 
 1. Install the GeoIP C library (either via your package manager, or via source):
+
 ```sh
 wget http://geolite.maxmind.com/download/geoip/api/c/GeoIP-1.4.7.tar.gz
 tar -xvzf GeoIP-1.4.7.tar.gz
